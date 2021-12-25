@@ -20,3 +20,12 @@ Quickstart: Restart VM via CLI
 
 Quickstart for AWS CloudShell
 * https://docs.aws.amazon.com/cloudshell/latest/userguide/working-with-cloudshell.html
+
+
+# Procedures
+
+# Logged into the aws graphic user interface console and on the ec2, tab I launched an instance chose the instance type and configured the instance as appropriate  and launched it
+
+
+
+# Understand the different power states of an instance and also managed the differnet power states
