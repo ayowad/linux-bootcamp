@@ -14,3 +14,16 @@ Quickstart: Create a Linux VM
 
 Quickstart for AWS CloudShell
 * https://docs.aws.amazon.com/cloudshell/latest/userguide/working-with-cloudshell.html
+
+# Launched the AWS instance
+
+# Visit the AWS console and launched the aws web powershell
+# Ran the following command to create an instance
+aws ec2 run-instances --image-id ami-002068ed284fb165b --instance-type t2.micro --key-name wad_key
+# Connected the instance
+ssh -i "wad_key.pem" ec2-user@ec2-18-118-27-132.us-east-2.compute.amazonaws.com
+
+# installed web server
+yum update -y
+yum install -y
+# Viewed web server in action
