@@ -15,6 +15,9 @@ Quickstart: Create a Linux VM
 Quickstart for AWS CloudShell
 * https://docs.aws.amazon.com/cloudshell/latest/userguide/working-with-cloudshell.html
 
+
+Procedures
+
 # Launched the AWS instance
 
 # Visit the AWS console and launched the aws web powershell
