@@ -27,6 +27,7 @@ aws ec2 run-instances --image-id ami-002068ed284fb165b --instance-type t2.micro 
 # Ran the below command to ensure my key is not publicly viewable
 chmod 400 wad_key.pem
 
+# opend web portal (Port 80)
 # Connected the instance
 ssh -i "wad_key.pem" ec2-user@ec2-18-118-27-132.us-east-2.compute.amazonaws.com
 
