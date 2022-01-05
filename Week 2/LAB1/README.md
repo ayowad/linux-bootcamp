@@ -40,3 +40,5 @@ yum update -y
 yum install -y httpd
 
 # Viewed web server in action
+
+![image](https://user-images.githubusercontent.com/94347897/148249962-d7d08bd8-a3f2-468f-abcf-758ec5902a4f.png)
