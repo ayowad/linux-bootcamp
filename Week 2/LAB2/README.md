@@ -25,7 +25,14 @@ Quickstart for AWS CloudShell
 # Procedures
 
 # Logged into the aws graphic user interface console and on the ec2, tab I launched an instance chose the instance type and configured the instance as appropriate  and launched it
+# Created an instance named: demo2 and instance ID: i-0b2ab685aa74b9879
+
+Connected to the instance
+![image](https://user-images.githubusercontent.com/94347897/148251559-77d6f9de-75ff-4f83-99ec-62923ed0a7fb.png)
+
+
 
 
 
 # Understand the different power states of an instance and also managed the differnet power states
+that is stopped, start, deallocate etc the instance
