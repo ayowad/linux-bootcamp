@@ -36,3 +36,8 @@ yum install httpd -y
 systemctl status
 
 ![image](https://user-images.githubusercontent.com/94347897/148458829-dd69f5f0-8c6e-4332-91d2-61a303e6a4c3.png)
+
+# Stopped instances
+aws ec2 stop-instances --instance-id i-0c7eb4e3a902444c0
+
+![image](https://user-images.githubusercontent.com/94347897/148465825-6ba42b69-2e68-4b8a-8b2a-fa744877cea4.png)
