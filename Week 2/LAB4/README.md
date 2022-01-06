@@ -21,3 +21,18 @@ How to use cloud-init to customize a Linux virtual machine in Azure on first boo
 
 Create bootstrap actions to install additional software
 * https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-bootstrap.html
+
+# Used the aws GUI to create a virtual machine named: apache_web_server
+# installed the apache web server (httpd)
+
+# started the service with the AWS CLI
+
+sudo su
+yum update -y
+yum install httpd -y
+
+
+# Queried system status
+systemctl status
+
+![image](https://user-images.githubusercontent.com/94347897/148458829-dd69f5f0-8c6e-4332-91d2-61a303e6a4c3.png)
