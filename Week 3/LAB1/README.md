@@ -20,3 +20,52 @@ Build and run a web application with the MEAN stack on an Azure Linux virtual ma
 
 MEAN Stack App
 * https://github.com/MicrosoftDocs/mslearn-build-a-web-app-with-mean-on-a-linux-vm
+
+
+
+# Created a Resource Group
+az group create --resource-group lampstack-rg --location eastus
+
+# Create a VM
+az vm create --resource-group lampstack-rg --name lampstack-vm
+--image UbuntuLTS
+--admin-user azureuser
+--generate-ssh-keys
+
+output:
+{
+  "fqdns": "",
+  "id": "/subscriptions/f6db755a-1490-42f1-be1c-adbb1d7328b1/resourceGroups/lamp
+stack-rg/providers/Microsoft.Compute/virtualMachines/lampstack-vm",
+  "location": "eastus",
+  "macAddress": "00-22-48-2A-C8-91",
+  "powerState": "VM running",
+  "privateIpAddress": "10.0.0.4",
+  "publicIpAddress": "13.92.159.153",
+  "resourceGroup": "lampstack-rg",
+  "zones": ""
+
+# Open web traffic port
+az vm open-port --port 80 --name lampstack-vm --resource-group lampstack-rg
+
+
+
+#ssh into the vm
+ssh azureuser@13.92.159.153
+
+# Install Apache, MySQL, and PHP
+sudo apt update && sudo apt install lamp-server^
+
+
+# Install WordPress
+sudo apt install wordpress
+# configure WordPress 
+sudo sensible-editor wordpress.sql
+
+creating a database with accessibility and identified by a password
+CREATE DATABASE wordpress;
+GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER
+ON wordpress.*
+TO wordpress@localhost
+IDENTIFIED BY 'yourPassword';
+
